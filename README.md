@@ -7,3 +7,5 @@ MarketWatch tracks the following asset classes:
 - Stocks 
 - Crypto
 - Indices
+
+This project was built using XAMPP server.
