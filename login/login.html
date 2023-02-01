@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta charset = 'utf-8' name = "viewport" content = "width=device-width , initial-scale = 1.0">
+<html  lang="en">  
+<head> 
+    <title>Price Tracker login</title>  
+    <link rel = "stylesheet" type = "text/css" href = "style.css">   
+</head>  
+<body>  
+    <div id = "frm">  
+        <h1>Login</h1>  
+        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+            <p>  
+                <label> Username: 
+                <input type = "text" id ="user" name  = "user" />
+                </label>  
+            </p>  
+            <p>  
+                <label> Password:   
+                <input type = "password" id ="pass" name  = "pass" />
+                </label>  
+            </p>  
+            <p>     
+                <input type =  "submit" id = "btn" value = "Login" />  
+            </p>  
+        </form>  
+    <p>
+        <a href = 'http://localhost/register/index.php'>Register here</a> 
+    </p>
+    </div>   
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+</body>     
+</html>  
